@@ -1,0 +1,174 @@
+/* boton agregar paciente */
+.add-btn {
+    background-color: rgb(44, 82, 136);
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border: 4px solid rgb(44, 82, 136);
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 1.05em;
+    border-radius: 1rem;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    width: 100%;
+}
+   
+.add-btn::before {
+    content: '';
+    inset:  0 0 0;
+    margin: auto;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background-color: rgb(44, 82, 136);
+    filter: brightness(50%);
+    z-index: -1;
+    border-radius: 5rem;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+   
+.add-btn:active {
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
+}
+   
+.add-btn:hover {
+    color: #fff;
+    width: 100%;
+    font-weight: 900;
+}
+   
+.add-btn:hover:before {
+    height: 100px;
+    border-radius: 0;
+    width: 100%;
+}
+
+
+
+/* boton editar paciente*/
+.edit-btn {
+    background-color: rgb(44, 82, 136);
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border: 4px solid rgb(44, 82, 136);
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 1.05em;
+    border-radius: 1rem;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    width: 25%;
+}
+@media (min-width: 768px) { 
+    .edit-btn {
+        width:40%;
+    }
+}
+   
+.edit-btn::before {
+    content: '';
+    inset:  0 0 0;
+    margin: auto;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background-color: rgb(44, 82, 136);
+    filter: brightness(50%);
+    z-index: -1;
+    border-radius: 5rem;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+   
+.edit-btn:active {
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
+}
+   
+.edit-btn:hover {
+    color: #fff;
+}
+   
+.edit-btn:hover:before {
+    height: 100px;
+    border-radius: 0;
+    width: 100%;
+}
+
+
+/* boton de eliminar paciente*/
+.delete-btn {
+    background-color: rgb(5, 139, 192);
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border: 4px solid rgb(5, 139, 192);
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 1.05em;
+    border-radius: 1rem;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    width: 25%;
+}
+
+@media (min-width: 768px) { 
+    .delete-btn {
+        width:40%;
+    }
+}
+   
+.delete-btn::before {
+    content: '';
+    inset:  0 0 0;
+    margin: auto;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background-color: rgb(5, 139, 192);
+    filter: brightness(50%);
+    z-index: -1;
+    border-radius: 5rem;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+   
+.delete-btn:active {
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
+}
+   
+.delete-btn:hover {
+    color: #fff;
+}
+   
+.delete-btn:hover:before {
+    height: 100px;
+    border-radius: 0;
+    width: 100%;
+}
