@@ -20,7 +20,7 @@ function Header() {
                 <div className="mt-2 sm:pt-8 ">
                     <img 
                         className="max-h-20   sm:max-h-24 mb-4   md:max-h-32   lg:max-h-36" 
-                        src="../../assets/perro-silueta.webp" 
+                        src="./perro-silueta.webp" 
                         alt="logo" 
                     />
                 </div>
