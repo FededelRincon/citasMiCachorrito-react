@@ -6,7 +6,7 @@ const PatientList = ({patient, setEditPatient, deletePatient}) => {
 
             {patient && patient.length ? (
                 <>
-                    <h2 className="font-black text-3xl text-center mb-6">Listado Pacientes</h2>
+                    <h2 className="font-black text-3xl text-gray-200 text-center mb-6">Listado Pacientes</h2>
 
                     { patient.map( (editPatient, index) => (
                         <Patient 
@@ -21,8 +21,9 @@ const PatientList = ({patient, setEditPatient, deletePatient}) => {
 
             ) : (
                 <>
-                    <h2 className="font-black text-3xl text-center">No hay pacientes</h2>
-                    <p className="text-xl mt-5 mb-10 text-center">
+                    <h2 className="font-black text-3xl text-gray-200 text-center">No hay pacientes</h2>
+
+                    <p className="text-xl mt-10 mb-10 text-center text-gray-200">
                         Comienza agregando {''}
                         <span className="text-secondary font-bold ">Mascotas</span>
                     </p>

@@ -7,9 +7,7 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
      ...theme('colors'),
-     'primary': '#2c5288',
-     'secondary': '#058bc0',
-     'danger': '#f9e4cb',
+     'primary': '#306787',
     })
   },
   variants: {

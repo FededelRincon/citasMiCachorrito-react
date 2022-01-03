@@ -1,11 +1,32 @@
+:root {
+    --primary: #306787;
+    /* --darker: #05324B; */
+    /* --lighter: #7697A8; */
+    
+
+    --azulOscuro: rgb(44, 82, 136);
+    
+    /* --celeste: rgb(5, 139, 192); */
+    --celeste: rgb(2, 128, 179);
+}
+
+/*asi se utilizan, con el var(--variable)*/
+/* body {
+    font-family: var(--fuentePrincipal);
+} */
+
+
+
 /* boton agregar paciente */
 .add-btn {
-    background-color: rgb(44, 82, 136);
+    /* background-color: rgb(44, 82, 136);  /*color azul lindo, antes de modificar todo */
+    background-color: var(--primary);
     z-index: 1;
     position: relative;
     overflow: hidden;
     color: #fff;
-    border: 4px solid rgb(44, 82, 136);
+    /* border: 4px solid rgb(44, 82, 136); */
+    border: 4px solid var(--primary);
     -webkit-transition: color .5s ease;
     transition: color .5s ease;
     padding: 10px 20px;
@@ -27,8 +48,9 @@
     height: 0px;
     width: 0px;
     position: absolute;
-    background-color: rgb(44, 82, 136);
-    filter: brightness(50%);
+    /* background-color: rgb(44, 82, 136); */
+    background-color: var(--primary);
+    filter: brightness(60%);
     z-index: -1;
     border-radius: 5rem;
     -webkit-transition: all .6s ease;
@@ -57,12 +79,14 @@
 
 /* boton editar paciente*/
 .edit-btn {
-    background-color: rgb(44, 82, 136);
+    /* background-color: rgb(44, 82, 136); */
+    background-color: var(--primary);
     z-index: 1;
     position: relative;
     overflow: hidden;
     color: #fff;
-    border: 4px solid rgb(44, 82, 136);
+    /* border: 4px solid rgb(44, 82, 136); */
+    border: 4px solid var(--primary);
     -webkit-transition: color .5s ease;
     transition: color .5s ease;
     padding: 10px 20px;
@@ -89,8 +113,9 @@
     height: 0px;
     width: 0px;
     position: absolute;
-    background-color: rgb(44, 82, 136);
-    filter: brightness(50%);
+    /* background-color: rgb(44, 82, 136); */
+    background-color: var(--primary);
+    filter: brightness(60%);
     z-index: -1;
     border-radius: 5rem;
     -webkit-transition: all .6s ease;
@@ -116,12 +141,14 @@
 
 /* boton de eliminar paciente*/
 .delete-btn {
-    background-color: rgb(5, 139, 192);
+    /* background-color: rgb(5, 139, 192); */ /*color celeste lindo antes de modificar todo el css*/
+    background-color: var(--celeste);
     z-index: 1;
     position: relative;
     overflow: hidden;
     color: #fff;
-    border: 4px solid rgb(5, 139, 192);
+    /* border: 4px solid rgb(5, 139, 192); */
+    border: 4px solid var(--celeste);
     -webkit-transition: color .5s ease;
     transition: color .5s ease;
     padding: 10px 20px;
@@ -149,8 +176,9 @@
     height: 0px;
     width: 0px;
     position: absolute;
-    background-color: rgb(5, 139, 192);
-    filter: brightness(50%);
+    /* background-color: rgb(5, 139, 192); */
+    background-color: var(--celeste);
+    filter: brightness(60%);
     z-index: -1;
     border-radius: 5rem;
     -webkit-transition: all .6s ease;

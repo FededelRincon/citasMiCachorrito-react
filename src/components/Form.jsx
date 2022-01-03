@@ -97,8 +97,8 @@ const Form = ({ patient, setPatients, editPatient, setEditPatient }) => {
     }
 
     return (
-        <div className="md:w-1/2 lg:w-2/5 mx-5 ">
-            <h2 className="font-black text-3xl text-center mb-6">Ingreso paciente</h2>
+        <div className=" md:w-1/2 lg:w-2/5 mx-5 ">
+            <h2 className="font-black text-3xl text-gray-200 text-center mb-6">Ingreso Paciente</h2>
 
             <form 
                 onSubmit={handleSubmit}
